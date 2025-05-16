@@ -1,0 +1,70 @@
+.user-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.user-selection-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: white; /* Asegurar que el título sea blanco */
+}
+
+.user-selection-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.profiles {
+  display: flex;
+  gap: 30px;
+}
+
+.profile-button {
+  padding: 25px 40px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.child-profile {
+  background-color: #ffca28; /* Amarillo soleado */
+  color: #333;
+}
+
+.child-profile:hover {
+  background-color: #ffb300;
+}
+
+.adult-profile {
+  background-color: #42a5f5; /* Azul cielo */
+  color: white;
+}
+
+.adult-profile:hover {
+  background-color: #1e88e5;
+}
+
+.profile-icon {
+  font-size: 3rem;
+  margin-top: 15px;
+}

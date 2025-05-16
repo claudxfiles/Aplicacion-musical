@@ -1,0 +1,96 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fija la barra de navegación en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que esté por encima de otro contenido */
+  box-sizing: border-box; /* Incluye padding y border en el width/height total */
+}
+
+.navbar-brand a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Espacio entre enlaces */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-links a.active-link {
+  font-weight: bold;
+  /* Los colores específicos de active-link se manejan por tema en App.css */
+}
+.child-theme .navbar-links a.active-link {
+  background-color: #00acc1; /* Un poco más oscuro que el hover de niño */
+  color: white;
+}
+.adult-theme .navbar-links a.active-link {
+  background-color: #3949ab; /* Un poco más oscuro que el hover de adulto */
+  color: white;
+}
+
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-profile-indicator {
+  font-size: 0.9em;
+  padding: 6px 10px;
+  border-radius: 15px;
+}
+.child-theme .user-profile-indicator {
+  background-color: #ffecb3; /* Amarillo pálido */
+  color: #e65100; /* Naranja oscuro */
+}
+.adult-theme .user-profile-indicator {
+  background-color: #e3f2fd; /* Azul muy pálido */
+  color: #0d47a1; /* Azul oscuro */
+}
+
+
+.logout-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Estilos de tema para el botón de logout */
+.child-theme .logout-button {
+  background-color: #f44336; /* Rojo para niños */
+  color: white;
+}
+.child-theme .logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.adult-theme .logout-button {
+  background-color: #d32f2f; /* Rojo también, o un gris oscuro */
+  color: white;
+}
+.adult-theme .logout-button:hover {
+  background-color: #c62828;
+}
